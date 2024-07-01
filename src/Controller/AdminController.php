@@ -17,6 +17,6 @@ class AdminController extends AbstractController
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
         // Votre logique pour le tableau de bord administrateur
-        return $this->render('back.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
+        return $this->render('Back/back.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
     }
 }

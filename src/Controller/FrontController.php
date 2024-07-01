@@ -17,6 +17,6 @@ class FrontController extends AbstractController
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
         // Votre logique pour la page d'accueil
-        return $this->render('front.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
+        return $this->render('Front/front.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
     }
 }
